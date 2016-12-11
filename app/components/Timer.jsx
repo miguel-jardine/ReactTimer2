@@ -1,5 +1,8 @@
 var 
-    React                   = require("react"),
+    React       = require("react"),
+
+    Clock       = require("Clock"),
+    Controls    = require("Controls"),
 
     end_var_def = [];
 
@@ -7,7 +10,8 @@ var Timer = React.createClass({
     render: function () {
         return(
             <div>
-                Timer
+                <Clock />
+                <Controls />
             </div>
         );
     }

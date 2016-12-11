@@ -1,5 +1,7 @@
 var 
-    React                   = require("react"),
+    React   = require("react"),
+
+    Clock   = require("Clock"),
 
     end_var_def = [];
 
@@ -7,7 +9,7 @@ var Countdown = React.createClass({
     render: function () {
         return(
             <div>
-                Countdown
+                <Clock time={73} />
             </div>
         );
     }

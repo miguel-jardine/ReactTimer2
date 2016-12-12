@@ -25,7 +25,7 @@ var Countdown = React.createClass({
 
 
     componentDidUpdate: function (prevProps, prevState) {
-        console.warn("called", this.state.time);
+        // console.warn("called", this.state.time);
         if (this.state.countdownStatus !== prevState.countdownStatus) {
             switch(this.state.countdownStatus) {
                 case "started":

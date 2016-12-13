@@ -24,10 +24,10 @@ describe("CountdownForm", () => {
 
             end_var_def = [];
 
-            countdownForm.refs.time.value = value + "";
-            TestUtils.Simulate.submit($el.find("form")[0]);
+        countdownForm.refs.time.value = value + "";
+        TestUtils.Simulate.submit($el.find("form")[0]);
 
-            expect(spy).toHaveBeenCalledWith(value);
+        expect(spy).toHaveBeenCalledWith(value);
     });
 
     it("should not call onSetCountdown if invalid seconds entered", () => {
@@ -39,10 +39,10 @@ describe("CountdownForm", () => {
 
             end_var_def = [];
 
-            countdownForm.refs.time.value = value + "";
-            TestUtils.Simulate.submit($el.find("form")[0]);
+        countdownForm.refs.time.value = value + "";
+        TestUtils.Simulate.submit($el.find("form")[0]);
 
-            expect(spy).toNotHaveBeenCalled();
+        expect(spy).toNotHaveBeenCalled();
     });
 
 });

@@ -50,7 +50,7 @@ var Countdown = React.createClass({
         clearInterval(this.timer);
         this.timer = undefined;
     },
-    
+
 
     startTimer: function () {
         this.timer = setInterval(() => {
@@ -98,6 +98,7 @@ var Countdown = React.createClass({
 
         return(
             <div id="countdown-container" >
+                <h1 className="page-title">Countdown</h1>
                 <div id="countdown-clock" >
                     <Clock time={time} />
                 </div>

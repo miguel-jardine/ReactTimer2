@@ -30,10 +30,10 @@ describe("Controls", () => {
         var
             controls = TestUtils.renderIntoDocument(<Controls countdownStatus="paused" />),
             $el = $(ReactDOM.findDOMNode(controls)),
-            $stopButton = $el.find("button:contains(Stop)"),
+            $startButton = $el.find("button:contains(Start)"),
 
             end_var_def = [];
 
-            expect($stopButton.length).toBe(1);
+            expect($startButton.length).toBe(1);
     });
 });
